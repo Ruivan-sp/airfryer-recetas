@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airfryer Chef Express - Las Mejores Recetas</title>
+    <title>Airfryer Chef Express - Recetas Crujientes</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #ff5722;
-            --secondary-color: #333;
+            --secondary-color: #2c3e50;
             --accent-color: #ff9800;
-            --bg-color: #f4f7f6;
-            --text-color: #444;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
             --card-bg: #ffffff;
             --border-radius: 12px;
-            --box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            --box-shadow: 0 10px 30px rgba(0,0,0,0.06);
         }
         body {
             font-family: 'Poppins', sans-serif;
@@ -27,7 +27,7 @@
         }
         header {
             background: var(--card-bg);
-            padding: 1.2rem 5%;
+            padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -37,7 +37,7 @@
             z-index: 100;
         }
         header .logo {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--secondary-color);
             text-decoration: none;
@@ -48,18 +48,8 @@
         header .logo i {
             color: var(--primary-color);
         }
-        header nav {
-            display: flex;
-            gap: 20px;
-        }
-        header nav a {
-            text-decoration: none;
-            color: var(--secondary-color);
-            font-weight: 400;
-            font-size: 0.95rem;
-        }
         .main-container {
-            max-width: 850px;
+            max-width: 800px;
             margin: 30px auto;
             padding: 0 15px;
         }
@@ -84,7 +74,7 @@
         .recipe-header-banner {
             background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
             color: white;
-            padding: 25px 30px;
+            padding: 30px;
         }
         .recipe-title {
             font-size: 2rem;
@@ -137,7 +127,6 @@
             margin-top: 50px;
         }
         @media (max-width: 768px) {
-            header nav { display: none; }
             .recipe-title { font-size: 1.5rem; }
             .recipe-body { padding: 20px; }
         }
@@ -149,10 +138,6 @@
         <a href="#" class="logo">
             <i class="fas fa-fire"></i> Airfryer Chef Express
         </a>
-        <nav>
-            <a href="#">Recetas</a>
-            <a href="#">Populares</a>
-        </nav>
     </header>
 
     <div class="main-container">
@@ -162,34 +147,33 @@
             [ Espacio para código de publicidad de Adsterra ]
         </div>
 
-        <!-- TARJETA DE RECETA PROFESIONAL -->
         <div class="recipe-card">
             <div class="recipe-header-banner">
-                <h1 class="recipe-title" id="recipe-title">Pollo Asado Crujiente a la Provenzal</h1>
+                <h1 class="recipe-title">Alitas de Pollo Crujientes al Ajillo</h1>
                 <div class="recipe-meta">
-                    <div class="meta-item"><i class="fas fa-stopwatch"></i> <span id="recipe-time">25 min</span></div>
-                    <div class="meta-item"><i class="fas fa-thermometer-half"></i> <span id="recipe-temp">200°C</span></div>
-                    <div class="meta-item"><i class="fas fa-users"></i> <span id="recipe-servings">4 porciones</span></div>
+                    <div class="meta-item"><i class="fas fa-stopwatch"></i> 20 min</div>
+                    <div class="meta-item"><i class="fas fa-thermometer-half"></i> 190°C</div>
+                    <div class="meta-item"><i class="fas fa-users"></i> 3 porciones</div>
                 </div>
             </div>
 
             <div class="recipe-body">
                 <h2 class="section-title"><i class="fas fa-shopping-basket"></i> Ingredientes</h2>
-                <ul class="ingredients-list" id="recipe-ingredients">
-                    <li>4 muslos de pollo con piel</li>
-                    <li>1 cucharada de aceite de oliva</li>
-                    <li>2 dientes de ajo picados</li>
-                    <li>1 cucharada de hierbas provenzales (tomillo, romero)</li>
-                    <li>Sal y pimienta al gusto</li>
+                <ul class="ingredients-list">
+                    <li>500g de alitas de pollo limpias</li>
+                    <li>1 cucharada de ajo en polvo</li>
+                    <li>1 cucharadita de pimentón dulce o picante</li>
+                    <li>1 cucharada de aceite de oliva virgen extra</li>
+                    <li>Sal y pimienta negra al gusto</li>
                 </ul>
 
                 <h2 class="section-title"><i class="fas fa-concierge-bell"></i> Preparación Paso a Paso</h2>
-                <ol class="steps-list" id="recipe-steps">
-                    <li>Precalentar la Airfryer a 200°C durante 5 minutos.</li>
-                    <li>Mezclar en un bol el aceite de oliva, el ajo picado y las hierbas provenzales.</li>
-                    <li>Pincelar generosamente los muslos de pollo con la mezcla por ambos lados.</li>
-                    <li>Colocar el pollo en la cesta de la freidora sin amontonar.</li>
-                    <li>Cocinar a 200°C durante 25-30 minutos, dándole la vuelta a mitad de tiempo hasta que la piel esté dorada y crujiente.</li>
+                <ol class="steps-list">
+                    <li>Seca muy bien las alitas con papel de cocina para asegurar que queden bien crujientes.</li>
+                    <li>En un bol grande, mezcla el aceite de oliva, el ajo en polvo, el pimentón, la sal y la pimienta.</li>
+                    <li>Añade las alitas al bol y asegúrate de que queden bien impregnadas con el aderezo.</li>
+                    <li>Precalienta tu Airfryer a 190°C durante 4 minutos.</li>
+                    <li>Coloca las alitas en la cesta en una sola capa y cuénalas durante 20 minutos, dándoles la vuelta a la mitad del tiempo.</li>
                 </ol>
             </div>
         </div>
